@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 // @CrossOrigin
 public class HomeController {
-    @GetMapping("/")
+    @GetMapping("/tablet")
     public String home() {
         return "Hello Welcome to Pharmacy Inventory System";
     }
