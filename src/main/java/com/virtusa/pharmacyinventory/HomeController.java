@@ -11,14 +11,16 @@ public class HomeController {
         return "Hello Welcome to Pharmacy Inventory System";
     }
 
-    @GetMapping("/api")
+    @GetMapping("/login")
     public String getTablets() {
-        return "We need Crocin for 1000 Patients";
+        
+        return "Login Success";
     }
 
     @GetMapping("/abc")
     public String getTablets2() {
         return "We need Crocin for 2000 Patients";
     }
+
 
 }
