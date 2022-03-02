@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DashboardController {
-    @GetMapping("/tablet")
+    @GetMapping("/medico")
     public String home() {
         return "Hellosaccsasca Welcome to Pharmacy Inventory System";
     }
