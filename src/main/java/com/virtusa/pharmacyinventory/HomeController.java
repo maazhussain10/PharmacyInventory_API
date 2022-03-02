@@ -16,4 +16,9 @@ public class HomeController {
         return "We need Crocin for 1000 Patients";
     }
 
+    @GetMapping("/abc")
+    public String getTablets2() {
+        return "We need Crocin for 2000 Patients";
+    }
+
 }
