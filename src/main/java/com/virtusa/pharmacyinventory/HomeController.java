@@ -1,20 +1,27 @@
 package com.virtusa.pharmacyinventory;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "*")
 @RestController
-// @CrossOrigin
 public class HomeController {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     @GetMapping("/welcome")
 =======
     @GetMapping("/a")
 >>>>>>> 47ce0e53ef8783e2a80ecf69ab1049d36091246d
+=======
+    @GetMapping("/")
+>>>>>>> Stashed changes
     public String home() {
         return "Welcome Please login to enter";
     }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     @GetMapping("/1001")
     public String getDolo() {
@@ -64,6 +71,10 @@ public class HomeController {
     @GetMapping("/login")
     public String getTablets() {
         
+=======
+    @PostMapping("/login")
+    public String userLogin() {
+>>>>>>> Stashed changes
         return "Login Success";
     }
 
