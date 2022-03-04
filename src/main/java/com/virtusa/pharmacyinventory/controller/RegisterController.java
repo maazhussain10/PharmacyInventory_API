@@ -18,14 +18,13 @@ public class RegisterController {
     @Autowired
     private RegisterRepository registerRepository;
 
-    @PostMapping(path = "/register")
-    public Register register(@RequestBody String firstname) {
-        System.out.println(firstname);
+    @GetMapping(path = "/register")
+    public Register register() {
         Register register = new Register();
-        register.setFirstname("Maaz");
-        register.setLastname("Hussain");
-        register.setEmail("maazhussain43@gmail.com");
-        register.setPassword("Maaz123");
+        register.setFirstname("Mohamed");
+        register.setLastname("Shafeeq");
+        register.setEmail("shafeeqarshad09@gmail.com");
+        register.setPassword("shafeeq1234");
         register.setGender("Male");
 
         return registerRepository.save(register);
