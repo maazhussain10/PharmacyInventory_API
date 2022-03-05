@@ -23,4 +23,10 @@ public class AddController {
 
         return addRepository.save(add);
     }
+    @GetMapping(path = "/delete")
+    public Add delete() {
+        Add add = new Add();
+        addRepository.deleteAll();
+        return add;
+    }
 }
