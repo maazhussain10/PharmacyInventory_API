@@ -21,10 +21,10 @@ public class RegisterController {
     @GetMapping(path = "/register")
     public Register register() {
         Register register = new Register();
-        register.setFirstname("Gowtham");
-        register.setLastname("Srinivasan");
-        register.setEmail("gowt19115.it@rmkec.ac.in");
-        register.setPassword("gowtham1234");
+        register.setFirstname("Ashok");
+        register.setLastname("Kumar A");
+        register.setEmail("asho19107.it@rmkec.ac.in");
+        register.setPassword("Ashok@2001");
         register.setGender("Male");
 
         return registerRepository.save(register);
