@@ -13,16 +13,11 @@ public class AddController {
     @Autowired
     private AddRepository addRepository;
 
-    @GetMapping(path = "/add")
-    public Add add() {
-        Add add = new Add();
-        add.setMedicine_Name("Advair Diskus");
-        add.setStock("95");
-        add.setMRP("550");
-        add.setOffer("1+1");
-
-        return addRepository.save(add);
+    @PostMapping(path = "/add")
+    public Add add(@RequestBody Add product) {
+        return addRepository.save(product);
     }
+    
     @GetMapping(path = "/delete")
     public Add delete() {
         Add add = new Add();

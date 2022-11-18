@@ -17,13 +17,9 @@ public class Add {
     private String stock;
     private String mrp;
     private String offer;
+    private String medicineid;
 
-    public Add(String productid, String medicinename, String stock, String mrp, String offer) {
-        this.setMedicine_Name(medicinename);
-        this.setStock(stock);
-        this.setMRP(mrp);
-        this.setOffer(offer);
-    }
+//    }
 
     public Add() {
     }
@@ -66,5 +62,15 @@ public class Add {
 
     public void setOffer(String offer) {
         this.offer = offer;
+    }
+    
+    public String getmedicineid()
+    {
+    	return medicineid;
+    }
+    
+    public void getmedicineid(String medicineid)
+    {
+    	this.medicineid = medicineid;    
     }
 }

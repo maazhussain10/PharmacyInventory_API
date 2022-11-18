@@ -17,7 +17,7 @@ public class RegisterServiceImpl implements RegisterService {
     public Register saveRegister(Object register) {
         System.out.println("AAA");
         System.out.println(register);
-        return registerRepository.save(new Register("Maaz","Hussain","maaz","mmm","male"));
+        return null;
     }
 
     @Override

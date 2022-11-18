@@ -15,19 +15,17 @@ public class Register {
     private int id;
     private String firstname;
     private String lastname;
-
-    @Column(nullable = false, unique = true, length = 45)
     private String email;
     private String password;
     private String gender;
-
-    public Register(String firstname, String lastname, String email, String password, String gender) {
-        this.setFirstname(firstname);
-        this.setLastname(lastname);
-        this.setEmail(email);
-        this.setPassword(password);
-        this.setGender(gender);
-    }
+    private String address;
+    private String address_2;
+    private String city;
+    private String state;
+    private String zip;
+    private String mobilenumber;
+    
+//    }
 
     public Register() {
     }
@@ -79,4 +77,55 @@ public class Register {
     public void setGender(String gender) {
         this.gender = gender;
     }
+    
+	public String getCity() {
+		return city;
+	}
+    
+    public void setCity(String city) {
+    	this.city = city;
+    }
+    
+    
+
+    public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getAddress_2() {
+		return address_2;
+	}
+
+	public void setAddress_2(String address_2) {
+		this.address_2 = address_2;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(String zip) {
+		this.zip = zip;
+	}
+	
+	public String getMobileNumber() {
+		return mobilenumber;
+	}
+	
+	public void setMobileNumber(String mobilenumber) {
+		this.mobilenumber = mobilenumber;
+	}
+
 }
